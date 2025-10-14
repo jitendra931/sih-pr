@@ -1,1 +1,1 @@
-# sih-pr
+# TechYatries Project
