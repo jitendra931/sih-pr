@@ -1,6 +1,8 @@
-import HeroSection from './components/HeroSection'
-import { Header } from './components/Header'
-import './App.css'
+import HeroSection from './components/HeroSection';
+import { Header } from './components/Header';
+import { Cards } from './components/Cards';
+import { CardsHeading } from './components/CardsHeading';
+import './App.css';
 
 function App() {
 
@@ -8,6 +10,8 @@ function App() {
     <>
       <Header />
       <HeroSection />
+      <CardsHeading />
+      <Cards/>
     </>
   )
 }
