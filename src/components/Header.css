@@ -120,3 +120,82 @@
   position: relative;
 }
 
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--main-0);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  /* Keep logo at top */
+  .logo-sec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  /* Hamburger + search side by side */
+  .right-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* hamburger left, search right */
+    align-items: center;
+    order: 2;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .search-box {
+    flex: 1; /* take remaining space */
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Navbar slide-down menu */
+  .navbar {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: var(--header-bg);
+    order: 3;
+  }
+
+  .navbar.open {
+    max-height: 500px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  /* Auth buttons stack nicely below navbar if needed */
+  .auth-buttons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
