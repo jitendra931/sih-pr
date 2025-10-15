@@ -1,11 +1,12 @@
 :root {
-  --header-bg: rgb(249, 249, 249);   
+  --header-bg: rgb(249, 249, 249);
   --logo: #da742b;
-  --main-0: #e65c00;   
-  --main-0-white : white;    
-  --main-1: #ffa64d;      
-  --main-2: #e65c00;     
+  --main-0: #e65c00;
+  --main-0-white: white;
+  --main-1: #ffa64d;
+  --main-2: #e65c00;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,5 +15,18 @@
 }
 
 body {
+  height: 1000px;
   background-color: #f9f9f9;
+}
+
+body {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Edge */
 }
