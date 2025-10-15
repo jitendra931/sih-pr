@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logoPic from '../assets/logo.png';
+import logoPic from '../assets/images/logo.png';
 import './Header.css';
 import { DropDownService } from './DropDownService';
 
